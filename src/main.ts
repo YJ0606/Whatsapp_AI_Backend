@@ -17,7 +17,7 @@ async function bootstrap() {
   // CORS
  app.enableCors({
   origin: [
-    "https://whatsapp-ai-frontend-eight.vercel.app"
+    "https://whatsapp-ai-frontend-ex71rqjd1-yj0606s-projects.vercel.app"
   ],
   credentials: true,
 });
