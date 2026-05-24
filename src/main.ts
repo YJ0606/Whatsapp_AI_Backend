@@ -15,10 +15,8 @@ async function bootstrap() {
   app.setGlobalPrefix("v1");
 
   // CORS
- app.enableCors({
-  origin: [
-    "https://whatsapp-ai-frontend-ex71rqjd1-yj0606s-projects.vercel.app"
-  ],
+app.enableCors({
+  origin: true,
   credentials: true,
 });
   
