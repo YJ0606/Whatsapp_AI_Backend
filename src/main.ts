@@ -21,7 +21,7 @@ async function bootstrap() {
   ],
   credentials: true,
 });
-``
+  
   // Global pipes
   app.useGlobalPipes(
     new ValidationPipe({
