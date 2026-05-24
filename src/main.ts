@@ -17,8 +17,6 @@ async function bootstrap() {
   // CORS
  app.enableCors({
   origin: [
-    "http://localhost:3000",
-    "https://whatsapp-ai-frontend-kitt.onrender.com",
     "https://whatsapp-ai-frontend-eight.vercel.app"
   ],
   credentials: true,
