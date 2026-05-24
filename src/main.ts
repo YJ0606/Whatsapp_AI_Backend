@@ -12,7 +12,7 @@ async function bootstrap() {
   });
 
   // Global prefix
-  fetch(`${API_URL}/v1/auth/login`)
+  app.setGlobalPrefix("v1");
 
   // CORS
  app.enableCors({
