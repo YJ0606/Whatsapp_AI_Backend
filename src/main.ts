@@ -12,15 +12,18 @@ async function bootstrap() {
   });
 
   // Global prefix
-  app.setGlobalPrefix("v1");
+  fetch(`${API_URL}/v1/auth/login`)
 
   // CORS
-  app.enableCors({
-    // 🔴 2. Removed the trailing slash '/' from the end of the URL string
-    origin: process.env.WEB_URL ?? "https://whatsapp-ai-frontend-eight.vercel.app/",
-    credentials: true,
-  });
-
+ app.enableCors({
+  origin: [
+    "http://localhost:3000",
+    "https://whatsapp-ai-frontend-kitt.onrender.com",
+    "https://whatsapp-ai-frontend-eight.vercel.app"
+  ],
+  credentials: true,
+});
+``
   // Global pipes
   app.useGlobalPipes(
     new ValidationPipe({
