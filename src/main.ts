@@ -17,7 +17,7 @@ async function bootstrap() {
   // CORS
   app.enableCors({
     // 🔴 2. Removed the trailing slash '/' from the end of the URL string
-    origin: process.env.WEB_URL ?? "https://whatsapp-ai-frontend-kitt.onrender.com",
+    origin: process.env.WEB_URL ?? "https://whatsapp-ai-frontend-eight.vercel.app/",
     credentials: true,
   });
 
